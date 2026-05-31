@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function ActivityTile() {
   const shades = ["bg-zinc-800", "bg-sky-950", "bg-sky-900", "bg-sky-800"];
 
