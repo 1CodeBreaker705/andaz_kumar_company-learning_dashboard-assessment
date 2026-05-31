@@ -1,6 +1,8 @@
-# Next-Gen Learning Dashboard
+# Next-Gen Learning Dashboard 
 
 A responsive learning dashboard built with Next.js 16, TypeScript, Tailwind CSS, Framer Motion, and Supabase.
+
+Deployed link:https://andaz-kumar-company-learning-dashbo.vercel.app/
 
 ## Architecture & Component Structure
 
