@@ -77,7 +77,7 @@ export default function CourseCard({ course, index }: CourseCardProps) {
               }}
               transition={{
                 duration: 1,
-                delay: index * 0.1,
+                delay: 0.2 + index * 0.1,
               }}
               className="h-full rounded-full bg-gradient-to-r from-cyan-500 to-indigo-500"
             />
