@@ -2,7 +2,19 @@ export default function ActivityTile() {
   const shades = ["bg-zinc-800", "bg-sky-950", "bg-sky-900", "bg-sky-800"];
 
   return (
-    <section className="col-span-1 md:col-span-2 xl:col-span-6 row-span-2 rounded-2xl border border-zinc-800 bg-zinc-900 p-4">
+    <motion.section
+      initial={{ opacity: 0, y: 20 }}
+      animate={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          delay: 0.1,
+          type: "spring",
+          stiffness: 300,
+          damping: 20,
+        },
+      }}
+      className="col-span-1 md:col-span-2 xl:col-span-6 row-span-2 rounded-2xl border border-zinc-800 bg-zinc-900 p-4">
       <h2 className="mb-4 text-xl font-semibold text-zinc-100">
         Learning Activity
       </h2>
@@ -38,6 +50,6 @@ export default function ActivityTile() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
